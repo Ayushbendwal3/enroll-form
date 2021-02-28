@@ -61,18 +61,20 @@ thead {
   background-color: #a7c93f;
 }
 
-thead > tr > th {
-  padding: 0.25rem !important;
+thead > tr > th,
+td {
+  padding: 0.25rem 0.5rem !important;
+}
+
+#table-data > tr > td:nth-child(even) {
+  animation-name: fadeIn;
+  animation-duration: 600ms;
+  width: 8.25rem !important;
 }
 
 img {
-  width: 100px;
+  width: 110px;
   min-height: 120px;
-}
-
-.table th,
-td {
-  padding: 0 !important;
 }
 
 @keyframes fadeIn {

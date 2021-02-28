@@ -1,8 +1,8 @@
 :root {
   --color-primary: #46d7ac;
   --color-divider: #81ceb6;
-  --row-even: ##ebf2d3;
-  --row-odd: #fffff;
+  --row-even: #ebf2d3;
+  --row-odd: #fffdff;
   font-size: 16px;
 }
 

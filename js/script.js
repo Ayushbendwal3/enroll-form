@@ -2,7 +2,9 @@ const pageAnimation = () => {
   document.querySelector('body').style.opacity = 1;
 };
 
+
 let flag = false;
+
 const onSubmit = () => {
   let gender;
   let data = [];

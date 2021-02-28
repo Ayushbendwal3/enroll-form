@@ -1,3 +1,8 @@
+const pageAnimation = () => {
+  document.querySelector('body').style.opacity = 1;
+};
+
+let flag = false;
 const onSubmit = () => {
   let gender;
   let data = [];
@@ -30,8 +35,19 @@ const onSubmit = () => {
     gender: gender,
     skills: [...skills]
   });
-
+  if (!flag) {
+    showTable();
+    flag = true;
+  }
   addRow(data);
+};
+
+const showTable = () => {
+  const temp = document.querySelector('template');
+  const dataTable = temp.content.cloneNode(true);
+  const enrolledSection = document.querySelector('.enrolled-section');
+  const old_child = enrolledSection.children[0];
+  enrolledSection.replaceChild(dataTable, old_child);
 };
 
 const addRow = (data) => {
